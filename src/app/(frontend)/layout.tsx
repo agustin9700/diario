@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Diario Tucumán',
@@ -12,18 +13,18 @@ function Header() {
   return (
     <header className="header">
       <div className="header-top">
-        <a href="/" className="header-logo">Diario <span>Tucumán</span></a>
+        <Link href="/" className="header-logo">Diario <span>Tucumán</span></Link>
         <span className="header-fecha">{fecha}</span>
       </div>
       <nav className="header-nav">
         <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/categoria/politica">Política</a></li>
-          <li><a href="/categoria/policial">Policial</a></li>
-          <li><a href="/categoria/economia">Economía</a></li>
-          <li><a href="/categoria/deportes">Deportes</a></li>
-          <li><a href="/categoria/sociedad">Sociedad</a></li>
-          <li><a href="/categoria/cultura">Cultura</a></li>
+          <li><Link href="/">Inicio</Link></li>
+          <li><Link href="/categoria/politica">Política</Link></li>
+          <li><Link href="/categoria/policial">Policial</Link></li>
+          <li><Link href="/categoria/economia">Economía</Link></li>
+          <li><Link href="/categoria/deportes">Deportes</Link></li>
+          <li><Link href="/categoria/sociedad">Sociedad</Link></li>
+          <li><Link href="/categoria/cultura">Cultura</Link></li>
         </ul>
       </nav>
     </header>
@@ -41,18 +42,18 @@ function Footer() {
         <div>
           <h5>Secciones</h5>
           <ul>
-            <li><a href="/categoria/politica">Política</a></li>
-            <li><a href="/categoria/policial">Policial</a></li>
-            <li><a href="/categoria/economia">Economía</a></li>
-            <li><a href="/categoria/deportes">Deportes</a></li>
+            <li><Link href="/categoria/politica">Política</Link></li>
+            <li><Link href="/categoria/policial">Policial</Link></li>
+            <li><Link href="/categoria/economia">Economía</Link></li>
+            <li><Link href="/categoria/deportes">Deportes</Link></li>
           </ul>
         </div>
         <div>
           <h5>El diario</h5>
           <ul>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="/admin">Admin</a></li>
+            <li><Link href="#">Quiénes somos</Link></li>
+            <li><Link href="#">Contacto</Link></li>
+            <li><Link href="/admin">Admin</Link></li>
           </ul>
         </div>
       </div>
